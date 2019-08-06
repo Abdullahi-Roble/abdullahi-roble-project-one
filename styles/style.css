@@ -1,0 +1,556 @@
+/*  COLOR STYLES
+
+Water blue - Hex #1D81CC - rgb(29, 129, 204)
+
+Marine - Hex #042259 - rgb(4, 34, 89)
+
+Pale rose - Hex #F5C8CF - rgb(245, 200, 207)
+
+Pale grey - Hex #F0F5FF - rgb(240, 245, 255)
+
+Light pink - Hex #FCDDE2 - rgb(252, 221, 226)
+
+Darker grey - Hex #1F2022 - rgb(31, 32, 34)
+
+*/
+
+/* SETUP STYLING */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;-moz-appearance:none}input[type=search]{-webkit-appearance:none;-moz-appearance:none;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}textarea{overflow:auto;vertical-align:top;resize:vertical}audio,canvas,video{display:inline-block;max-width:100%}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a:focus{outline:thin dotted}a:active,a:hover{outline:0}img{border:0;-ms-interpolation-mode:bicubic}figure{margin:0}form{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}button,html,input,select,textarea{color:#222}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/*  GENERAL STYLES */
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    color: rgb(31, 32, 34);
+    line-height: 29px;
+    letter-spacing: 0.2px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: 'Emblema One', cursive;
+    text-transform: uppercase;
+    color: rgb(29, 129, 204);
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: rgb(29, 129, 204);
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+/* HEADER STYLES */
+
+header {
+    background: url(../electric-select-assets/header-group-appliances.png), linear-gradient(.25turn, rgb(252, 221, 226), 60%, rgba(252, 221, 226, 0.5));
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 110vh;
+    min-height: 600px;
+    position: relative;
+}
+
+nav {
+    float: right;
+    padding: 10px;
+}
+
+nav li {
+    float: left;
+    margin: 5px 15px 0 10px;
+}
+
+.menu1 a,
+.title p {
+    font-family: 'Barlow', sans-serif;
+    color: rgb(4, 34, 89);
+}
+
+.menu1 a {
+    font-weight: 700;
+}
+
+.menu i {
+    display: none;
+}
+
+.media {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    width: 1%;
+}
+
+h1 {
+    font-size: 5.23rem;
+    line-height: 87.3px;
+    width: 500px;
+}
+
+.title {
+    padding-top: 250px;
+}
+
+.title p {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+/* MAIN STYLING */
+    /* SECTION 1 */
+
+.genAppliance {
+    background-color: rgba(252, 221, 226, 0.6);
+}    
+
+.genAppliance h2 {
+    font-size: 2.1rem;
+    text-align: center;
+    padding: 100px 0 70px 0;
+}    
+
+.genAppliance img {
+    width: 31%;
+    float: left;
+}
+
+.simBlend {
+    margin: 0 3.5%;
+}
+
+.chromeApp {
+    clear: both;
+    padding: 100px 0 70px 0;
+}
+
+.chromeApp img {
+    width: 28%;    
+    float: left;
+    margin: 10px;
+}
+
+.chromeApp figcaption {
+    width: 70%;
+    float: left;
+    padding-left: 30px;
+}
+
+.chromeApp h2 {
+    padding: 10px 0 15px 0;
+    text-align: left;
+}
+
+.genAppliance button {
+    background: rgb(4, 34, 89);
+    border: none;
+    padding: 1.5%;
+    margin-top: 1.25%;
+}
+
+.genAppliance a {
+    color: rgb(255, 255, 255);
+}
+
+    /* SECTIONS 2 & 3 */
+
+.newAppliance {
+    background-color: rgb(240, 245, 255);
+}    
+
+.newAppliance h2 {
+    font-size: 2.1rem;
+    line-height: 42px;
+}
+
+.greenBlend img {
+    float: right;
+    width: 50%;
+}
+
+.kitchenApp img {
+    float: left;
+    width: 50%;
+}
+
+.kitchenApp figcaption,
+.greenBlend figcaption {
+    float: left;
+    width: 50%;
+}
+
+.smoothApp {
+    padding: 10% 10% 0 0;
+}
+
+.newishApp {
+    padding: 10% 0 0 10%;
+}
+
+.greenBlend p,
+.kitchenApp p {
+    padding: 5% 0;
+}
+
+.newAppliance button,
+.electricUpdate button {
+    background: rgb(245, 200, 207);
+    border: none;
+    padding: 3%;
+}
+
+.newAppliance a,
+.electricUpdate a {
+    color: rgb(4, 34, 89);
+}
+
+/* SECTION 4 */
+
+.calenCarCase {
+    /* clear: both; */
+    background-color: rgba(252, 221, 226, 0.7);
+}
+
+.calenCarCase i {
+    color: rgb(4, 34, 89);
+    font-size: 2.5rem;
+    /* padding: 8% 0 5% 0; */
+}
+
+.icons {
+    width: 33%;
+    float: left;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5% 0 8% 0;
+}
+
+/* FOOTER STYLING */
+
+    /* MAIN FOOTER */
+
+.footerMain {
+    background: rgb(240, 245, 255);
+    padding: 5% 0;
+}    
+
+footer h4,
+.menu2 {
+    font-size: 1.25rem;
+}
+
+.electricUpdate {
+    width: 50%;
+    float: left;
+}
+
+.electricUpdate form button {
+    padding: 2%;
+    margin: 0;
+}
+
+input {
+    width: 74%;
+    padding: 2%;
+    border: 1px solid rgb(245, 200, 207);
+    margin: 0;
+}
+
+.electricContact,
+.electricMenu {
+    float: left;
+}
+
+.electricContact {
+    width: 28%;
+    padding-right: 2%;
+    margin-left: 3%;
+}
+
+.electricContact p {
+    padding: 2% 3%;
+}
+
+.electricMenu {
+    width: 15%;
+    padding-left: 2%;
+    text-align: right;
+}
+
+    /* SECOND LEVEL FOOTER */
+
+.footerMin {
+    background: rgb(4, 34, 89);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+    /* DESKTOP TO TABLET OPTIMIZATION */
+
+@media (max-width: 940px) {
+
+}     
+
+    /* TABLET TO LANDSCAPE PHONE OPTIMIZATION */
+
+@media (max-width: 700px) {
+
+}    
+
+    /* LANDSCAPE TO PORTRAIT PHONE OPTIMIZATION */
+
+@media (max-width: 480px) {
+
+        /* GENERAL STYLING */
+
+    h1 {
+        font-size: 3rem;
+        line-height: 50px;
+    }    
+
+        /* HEADER STYLING */
+
+    header {
+        background-color: rgba(252, 221, 226);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        height: 110vh;
+        background-position: right bottom;
+        width: 100%;
+    }
+
+    .title p {
+        font-size: 1.05rem;
+        padding: 0;
+    }
+
+    .menu1, .media {
+        display: none;
+    }
+
+    .menu i {
+        color: rgb(4, 34, 89);
+        font-size: 2rem;
+        display: inline;
+    }
+
+        /* SECTION 1 STYLING */
+
+    .genAppliance h2 {
+        font-size: 1.7rem;
+    }
+    
+    .genAppliance img {
+        width: 48.5%;
+    }
+
+    .sleekMicro {
+        margin: 0 3% 0 0;
+    }
+
+    .simBlend {
+        margin: 0;
+    }
+
+    .whiteToast {
+        display: none;
+    }    
+
+    .chromeApp {
+        padding: 0;
+    }
+
+    .chromeApp img {
+        width: 100%;
+        margin: 20% 0 5% 0;
+    }
+
+    .chromeApp figcaption {
+        width: 100%;
+        float: none;
+        padding: 5% 0;
+    }
+
+    .chromeApp a,
+    .chromeApp h2 {
+        text-align: center;
+    }
+
+    .chromeApp p {
+        padding: 5% 0;
+    }
+
+    .genAppliance button {
+        padding: 5%;
+        margin: 1.25% 0 5% 30%;
+    }
+
+        /* SECTIONS 2 & 3 STYLING */
+
+    .newAppliance {
+        background-color: rgba(252, 221, 226, 0.6);
+    }  
+
+    .greenBlend img,
+    .kitchenApp img {
+        float: none;
+        width: 100%;
+    }
+
+    .greenBlend figcaption,
+    .kitchenApp figcaption {
+        float: none;
+        width: 100%;
+    }
+
+    .newAppliance h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .smoothApp,
+    .newishApp {
+        padding: 10% 0 0 0;
+    }
+
+    .newAppliance button {
+        background: rgb(4, 34, 89);
+        border: none;
+        padding: 1.5%;
+        margin: 1.25% 0 10% 30%;
+    }
+
+    .newAppliance a {
+        color: rgb(255, 255, 255);
+    }   
+
+        /* SECTION 4 STYLING */
+
+    .calenCarCase {
+        background-color: rgb(245, 200, 207);
+    }
+
+    .icons {
+        width: 75%;
+        float: none;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5% 0;
+    }
+
+        /* FOOTER STYLING */
+
+            /* MAIN FOOTER */
+
+    .electricUpdate {
+        width: 100%;
+        /* float: none; */
+    }
+
+    .electricUpdate h4 {
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+        margin: 1% 0 3% 0;
+        text-align: center;
+    }
+
+    .electricUpdate form button {
+        margin: 0 0 10% 30%;
+    }
+
+    .electricContact {
+        width: 65%;
+        padding-right: 10%;
+        margin: 0;
+    }
+
+    .electricMenu {
+        width: 30%;
+    }
+} 
+
+@media (max-width: 320px) {
+
+        /* GENERAL STYLES */
+
+    h1 {
+        font-size: 2.5rem;
+        width: 50%;
+    }   
+    
+        /* HEADER STYLING */
+
+    .title {
+        padding-top: 
+    }
+    
+    .title p {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+
+    header {
+        background-size: 285px;
+        height: 95vh;
+    }
+
+        /* SECTION 1 STYLING */
+
+    .genAppliance button {
+        margin: 1.25% 0 5% 20%;
+    }
+
+        /* SECTION 2 STYLING */
+
+    .newAppliance button {
+        margin: 1.25% 0 5% 25%;
+    }
+
+        /* FOOTER STYLING */
+            /* FOOTER MAIN */
+
+    .electricContact {
+        width: 55%;
+    }
+
+    .electricMenu li {
+        text-align: right;
+    }
+
+    .electricMenu li:nth-of-type(n+2) {
+        padding: 10% 0;
+    }
+}
