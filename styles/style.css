@@ -67,6 +67,19 @@ i {
     padding-bottom: 10px;
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skipLink:focus {
+  left: 0;
+}
+
 /* HEADER STYLES */
 
 header {
@@ -116,7 +129,7 @@ h1 {
 }
 
 .title {
-    padding-top: 250px;
+    padding-top: 21%;
 }
 
 .title p {
@@ -172,7 +185,7 @@ h1 {
     background: rgb(4, 34, 89);
     border: none;
     padding: 1.5%;
-    margin-top: 1.25%;
+    margin: 1.25% 0 0 0;
 }
 
 .genAppliance a {
@@ -234,14 +247,12 @@ h1 {
 /* SECTION 4 */
 
 .calenCarCase {
-    /* clear: both; */
     background-color: rgba(252, 221, 226, 0.7);
 }
 
 .calenCarCase i {
     color: rgb(4, 34, 89);
     font-size: 2.5rem;
-    /* padding: 8% 0 5% 0; */
 }
 
 .icons {
@@ -316,14 +327,153 @@ input {
 
     /* DESKTOP TO TABLET OPTIMIZATION */
 
-@media (max-width: 940px) {
+@media (max-width: 950px) {
 
+        /* GENERAL STYLING */
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 70px;
+    }
+
+        /* HEADER STYLING */
+
+    header {
+        background-color: rgba(252, 221, 226);
+        background-size: 600px;
+        height: 90vh;
+    }
+
+    .title {
+        padding-top: 29%;
+    }
+    
+    .title p {
+        font-size: 1.4rem;
+        padding: 0;
+    }
+
+        /* SECTION 1 STYLING */
+    
+    .chromeApp img {
+        width: 35%;
+    }    
+
+    .chromeApp figcaption {
+        width: 60%;
+    }    
+    
+    .chromeApp h2,
+    .newAppliance h2 {
+        line-height: 35px;
+    }
+
+    .chromeApp p {
+        font-size: 1rem;
+    }
+
+        /* SECTION 2 STYLING */
+
+    .newAppliance h2 {
+        font-size: 1.7rem;
+    }
+
+    .newAppliance button {
+        margin: 1.5% 0 0 0;
+    }
+
+    .smoothApp {
+        padding: 2% 8% 0 0;
+    }
+    .newishApp {
+        padding: 2% 0 0 8%;
+    }
+
+    .greenBlend p,
+    .kitchenApp p {
+        padding: 0;
+    }
 }     
 
     /* TABLET TO LANDSCAPE PHONE OPTIMIZATION */
 
 @media (max-width: 700px) {
 
+         /* GENERAL STYLING */
+
+    h1 {
+        font-size: 3.25rem;
+        line-height: 70px;
+    }
+
+        /* HEADER STYLING */
+
+    header {
+        background-color: rgba(252, 221, 226);
+        background-size: 500px;
+        height: 100vh;
+    }
+
+    .title {
+        padding-top: 35%;
+    }
+    
+    .title p {
+        font-size: 1.15rem;
+        padding: 0;
+    }
+
+        /* SECTION 1 STYLING */
+    
+    .chromeApp img {
+        width: 100%;
+    }    
+
+    .chromeApp figcaption {
+        width: 100%;
+    }    
+    
+    .chromeApp h2,
+    .newAppliance h2 {
+        line-height: 40px;
+    }
+
+    .chromeApp p {
+        padding-bottom: 3%;
+    }
+
+    .genAppliance button {
+        margin: 1.25% 0 0 33%;
+    }
+
+        /* SECTIONS 2 & 3 STYLING */
+
+    .greenBlend img,
+    .kitchenApp img {
+        float: none;
+        width: 100%;
+    }
+
+    .greenBlend figcaption,
+    .kitchenApp figcaption {
+        float: none;
+        width: 100%;
+    }
+
+    .newAppliance h2 {
+        font-size: 1.7rem;
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    .newAppliance button {
+        margin: 3% 0 3% 35%;
+    }
+
+    .smoothApp,
+    .newishApp {
+        padding: 5% 0 0 0;
+    }
 }    
 
     /* LANDSCAPE TO PORTRAIT PHONE OPTIMIZATION */
@@ -343,7 +493,7 @@ input {
         background-color: rgba(252, 221, 226);
         background-repeat: no-repeat;
         background-size: 400px;
-        height: 110vh;
+        height: 100vh;
         background-position: right bottom;
         width: 100%;
     }
@@ -502,6 +652,8 @@ input {
     }
 } 
 
+    /* SMALL MOBILE PHONE OPTIMIZATION */
+
 @media (max-width: 320px) {
 
         /* GENERAL STYLES */
@@ -512,10 +664,6 @@ input {
     }   
     
         /* HEADER STYLING */
-
-    .title {
-        padding-top: 
-    }
     
     .title p {
         font-size: 0.9rem;
@@ -524,7 +672,7 @@ input {
 
     header {
         background-size: 285px;
-        height: 95vh;
+        height: 80vh;
     }
 
         /* SECTION 1 STYLING */
